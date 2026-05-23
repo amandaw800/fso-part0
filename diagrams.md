@@ -38,6 +38,7 @@ sequenceDiagram
     server-->>browser: JSON with the notes
     deactivate server
 
+<img width="1834" height="1451" alt="diagram1" src="https://github.com/user-attachments/assets/0fb864df-3fac-46f0-bde8-639a56cc7d0e" />
 
 
 0.5
