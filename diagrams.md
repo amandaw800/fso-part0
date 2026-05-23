@@ -42,3 +42,30 @@ sequenceDiagram
 
 
 0.5
+
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes/spa
+    activate server
+    server-->>browser: HTML document
+    deactivate server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    activate server
+    server-->>browser: the CSS file
+    deactivate server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+    activate server
+    server-->>browser: the JavaScript file
+    deactivate server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    activate server
+    server-->>browser: [{ "content": "helo, can you hear me?", "date": "2026-5-22T02:38:02.106Z" }, ... ]
+    deactivate server
+
+<img width="1659" height="1105" alt="diagram2" src="https://github.com/user-attachments/assets/aad80d42-70a3-499a-8051-83df4bcfa561" />
+
